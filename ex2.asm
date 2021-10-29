@@ -5,6 +5,7 @@ global main
 ; importando a ordem em que elas sao chamadas
 %define alice 1
 %idefine AlIcE 2
+%idefine aLiCe 3
 
 ; Ja desse jeito o programa quebra falando que AlIcE nao esta definida
 ; %idefine AlIcE 3
@@ -30,6 +31,11 @@ main:
   mov rax, 0
   call printf WRT ..plt
 
+  mov rdi, printf_format
+  mov rsi, aLiCe
+  mov rax, 0
+  call printf WRT ..plt
+
 ;;;;;;;;;;;;;;;Usando as expansoes;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
   mov rax, 1                 ; codigo do syscall para escrita
@@ -45,6 +51,11 @@ main:
 
   mov rdi, printf_format
   mov rsi, 2
+  mov rax, 0
+  call printf WRT ..plt
+
+  mov rdi, printf_format
+  mov rsi, 3
   mov rax, 0
   call printf WRT ..plt
 
