@@ -3,12 +3,10 @@ global main
 
 ; Desse jeito ficamos com duas macros que funcionam, ambas com valor 2, nao
 ; importando a ordem em que elas sao chamadas
-%define alice 1
-%idefine AlIcE 2
-
-; Ja desse jeito o programa quebra falando que AlIcE nao esta definida
-; %idefine AlIcE 3
-; %define alice 4
+%define aliceborges 1
+%define alicelima 2
+%define alicegabriele 3
+%define aliceverso(x) alice%+ x
 
 section .text
 main:
@@ -21,12 +19,7 @@ main:
   syscall
 
   mov rdi, printf_format
-  mov rsi, alice
-  mov rax, 0
-  call printf WRT ..plt
-
-  mov rdi, printf_format
-  mov rsi, AlIcE
+  mov rsi, aliceverso(lima)
   mov rax, 0
   call printf WRT ..plt
 
@@ -37,11 +30,6 @@ main:
   mov rsi, expansoes_string  ; endereco da string output
   mov rdx, 12                ; numero de bytes
   syscall
-
-  mov rdi, printf_format
-  mov rsi, 2
-  mov rax, 0
-  call printf WRT ..plt
 
   mov rdi, printf_format
   mov rsi, 2
