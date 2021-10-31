@@ -27,7 +27,7 @@ mkdir exe
 mkdir obj 
 ```
 
-Para executar cada um dos exemplos basta executar o comando abaixo trocando <name> pelo nome do arquivo:
+Para executar cada um dos exemplos basta executar o comando abaixo trocando \<name> pelo nome do arquivo:
 ```shell
 nasm -felf64 <name>.asm -o ./obj/<name>.o && gcc ./obj/<name>.o -o ./exe/<name>.exe && ./exe/<name>.exe
 ```
