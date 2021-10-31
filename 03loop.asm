@@ -1,3 +1,5 @@
+; nasm -felf64 03loop.asm -o ./obj/03loop.o && gcc ./obj/03loop.o -o ./exe/03loop.exe && ./exe/03loop.exe
+
 extern printf
 global main
 

@@ -1,3 +1,5 @@
+; nasm -felf64 10substr.asm -o ./obj/10substr.o && gcc ./obj/10substr.o -o ./exe/10substr.exe && ./exe/10substr.exe
+
 extern printf
 global main
 

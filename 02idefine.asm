@@ -1,3 +1,5 @@
+; nasm -felf64 02idefine.asm -o ./obj/02idefine.o && gcc ./obj/02idefine.o -o ./exe/02idefine.exe && ./exe/02idefine.exe
+
 extern printf
 global main
 

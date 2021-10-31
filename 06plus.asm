@@ -1,3 +1,5 @@
+; nasm -felf64 06plus.asm -o ./obj/06plus.o && gcc ./obj/06plus.o -o ./exe/06plus.exe && ./exe/06plus.exe
+
 extern printf
 global main
 

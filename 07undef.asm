@@ -1,3 +1,5 @@
+; nasm -felf64 07undef.asm -o ./obj/07undef.o && gcc ./obj/07undef.o -o ./exe/07undef.exe && ./exe/07undef.exe
+
 extern printf
 global main
 

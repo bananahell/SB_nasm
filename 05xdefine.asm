@@ -1,3 +1,5 @@
+; nasm -felf64 05xdefine.asm -o ./obj/05xdefine.o && gcc ./obj/05xdefine.o -o ./exe/05xdefine.exe && ./exe/05xdefine.exe
+
 extern printf
 global main
 

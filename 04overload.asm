@@ -1,3 +1,5 @@
+; nasm -felf64 04overload.asm -o ./obj/04overload.o && gcc ./obj/04overload.o -o ./exe/04overload.exe && ./exe/04overload.exe
+
 extern printf
 global main
 

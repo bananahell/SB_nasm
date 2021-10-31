@@ -1,3 +1,5 @@
+; nasm -felf64 08assign.asm -o ./obj/08assign.o && gcc ./obj/08assign.o -o ./exe/08assign.exe && ./exe/08assign.exe
+
 extern printf
 global main
 

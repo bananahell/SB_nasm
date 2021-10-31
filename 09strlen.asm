@@ -1,3 +1,5 @@
+; nasm -felf64 09strlen.asm -o ./obj/09strlen.o && gcc ./obj/09strlen.o -o ./exe/09strlen.exe && ./exe/09strlen.exe
+
 extern printf
 global main
 
